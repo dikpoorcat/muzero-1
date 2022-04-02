@@ -40,6 +40,13 @@ class DotDict(dict):
     def to_json(self, file: str) -> None:
         """ Dump data as a JSON to the specified file """
         import json
+        import os
+        path = os.path.dirname(file)
+        abs_path = os.path.abspath(path)
+        print(f'---相对路径：{path}')
+        print(f'===绝对路径：{abs_path}')
+        if not os.path.exists(abs_path):
+            os.makedirs(abs_path)
         with open(file, 'w') as f:
             json.dump(self, f)
 

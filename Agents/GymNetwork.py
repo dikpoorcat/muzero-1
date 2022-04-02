@@ -7,7 +7,7 @@ import sys
 
 from keras.layers import Dense, Input, Reshape, Concatenate, Activation
 from keras.models import Model
-from keras.optimizers import Adam
+from keras.optimizers import adam_v2 as Adam
 
 from utils.network_utils import Crafter, MinMaxScaler
 

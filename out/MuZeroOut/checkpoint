@@ -1,0 +1,2 @@
+model_checkpoint_path: "decoder_latest.pth.tar"
+all_model_checkpoint_paths: "decoder_latest.pth.tar"
